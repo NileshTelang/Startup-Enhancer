@@ -1,0 +1,19 @@
+{
+  "name": "fteam1",
+  "version": "1.0.0",
+  "description": "fTeam1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/novafirekt/fTeam1.git"
+  },
+  "author": "Nova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/novafirekt/fTeam1/issues"
+  },
+  "homepage": "https://github.com/novafirekt/fTeam1#readme"
+}
