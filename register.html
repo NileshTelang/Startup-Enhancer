@@ -1,17 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Page</title>
+  <link rel="stylesheet" href="register.css">
+  <script src="https://kit.fontawesome.com/0c13a9f144.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div>
-        <h1>Registration Page</h1>
+  <div class="">
+    <div id="" class="">
+      <div class="">
+        <header >
+          <h1>
+            Join NAME
+          </h1>
+          <h2>
+            Find and invest in startups.
+          </h2>
+        </header>
+
+        <form id="" class="" action="" method="">
+          <input type="hidden">
+          <div class="">
+            <div>
+              <p>
+                Already have an account?
+                <a class="" href="">Log in</a>
+              </p>
+            </div>
+              <a class="" href="">
+                <i class="fab fa-google"></i>
+                Sign up with Google
+              </a>
+
+              <a class="" href="">
+                <i class="fab fa-linkedin">
+                </i>Sign up with LinkedIn</a>
+            </div>
+
+            <div class="">
+              <p>
+                or
+                <a class="" href="">
+                  sign up with email
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <div class="">
+            <div class="">
+              <div class="">
+                <div class="">
+                  <label class="" for="">
+                    First name
+                  </label>
+                  <input data-required="true" data-maxlength="40" placeholder="First name" type="text"
+                    name="user[first_name]" id="">
+                </div>
+              </div>
+
+              <div class="">
+                <div class="">
+                  <label class="" for="">
+                    Last name
+                  </label>
+                  <input data-required="true" data-maxlength="40" data-trigger="focusout"
+                    class="" placeholder="Last name" type="text" value="" id="">
+                </div>
+              </div>
+
+              <div class="">
+                <div class="">
+                  <label class="" for="">
+                    <!-- add id in for property which mentioned in input tag -->
+                    Email
+                  </label>
+                  <input data-type="email" data-required="true"
+                    class="string email optional parsley-validated" placeholder="Your email address" type="email"
+                    name="user[email]" id=""></div>
+              </div>
+
+              <div class="field password">
+                <div class="input password optional user_password">
+                  <label
+                    class="password optional control-label white-label" for="user_password">
+                    Password
+                  </label>
+                  <input
+                    data-minlength="8" data-required="true" class="password optional parsley-validated"
+                    placeholder="Choose a password" type="password" name="user[password]" id="user_password">
+                  </div>
+              </div>
+
+              <div class="">
+                <button id="" class="">
+                  <i class="far fa-envelope" aria-hidden="true"></i> Sign up with email
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="">
+            <div>
+              <input value="0" type="hidden">
+              <label>
+                <input type="checkbox" checked="checked">
+                Subscribe me to NAME's weekly newsletter (community updates and awesome startups)
+              </label>
+            </div>
+          </div>
+
+          <div class="">
+            <small>
+              By creating an account, you agree to our <a href="">Terms of Service</a> and
+              <a href="">Privacy Policy</a>.
+            </small>
+          </div>
+        </form>
+      </div>
     </div>
+
+  </div>
 </body>
 </html>
