@@ -11,19 +11,6 @@
 /* Mandar */
 /* mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
 mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
-
-/* Harshal */
-
-
-
-/* Pratiksha */
-
-
-
-
-/* Mandar */
-
-
 body {
     margin: 0;
     padding: 0;
@@ -32,7 +19,7 @@ body {
   /* main containers */
   
   .bigcontainer {
-    background-image: url("/public/imgs/pexels-cottonbro-studio-4065133.jpg");
+    background-image: url("/images/pexels-cottonbro-studio-4065133.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -83,7 +70,7 @@ body {
   /* image containers */
   
   .mmainimg {
-    background-image: url("/public/imgs/office\ \(1\).png");
+    background-image: url("/images/office\ \(1\).png");
     background-color: #F4F6FB;
     width: 6rem;
     height: 23rem;
