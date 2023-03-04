@@ -9,3 +9,246 @@
 
 
 /* Mandar */
+/* mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm */
+
+/* Harshal */
+
+
+
+/* Pratiksha */
+
+
+
+
+/* Mandar */
+
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* main containers */
+  
+  .bigcontainer {
+    background-image: url("/public/imgs/pexels-cottonbro-studio-4065133.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: block;
+    width: 1200px;
+    height: 800px;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    filter: drop-shadow(10px);
+  }
+  
+  .mcontainer {
+    z-index: 99999;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+  }
+  
+  /* right container */
+  .rightcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 60px;
+    padding: 2px;
+  }
+  
+  
+  /* leftcontainer */
+  .leftcontainer {
+    justify-content: center;
+    position: relative;
+  }
+  
+  
+  
+  /* image containers */
+  
+  .mmainimg {
+    background-image: url("/public/imgs/office\ \(1\).png");
+    background-color: #F4F6FB;
+    width: 6rem;
+    height: 23rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 25px 0px 0px 25px;
+    padding: 100px;
+    align-items: center;
+    border: 1px solid white;
+    box-shadow: 10px 10px 64px 0px rgba(180, 180, 207, 0.75);
+    -webkit-box-shadow: 10px 10px 64px 0px rgba(186, 186, 202, 0.75);
+    -moz-box-shadow: 10px 10px 64px 0px rgba(208, 208, 231, 0.75);
+  }
+  
+  /* login and register card */
+  
+  .mcard {
+    padding: 5px;
+    width: 18rem;
+    height: 23rem;
+    background: #F4F6FB;
+    border: 1px solid white;
+    box-shadow: 10px 10px 64px 0px rgba(180, 180, 207, 0.75);
+    -webkit-box-shadow: 10px 10px 64px 0px rgba(186, 186, 202, 0.75);
+    -moz-box-shadow: 10px 10px 64px 0px rgba(208, 208, 231, 0.75);
+    border-radius: 0px 25px 25px 0px;
+  }
+  
+  .mform {
+    padding: 25px;
+  }
+  
+  .card_header {
+    display: flex;
+    align-items: center;
+  }
+  
+  .mcard svg {
+    color: #7878bd;
+    margin-bottom: 20px;
+    margin-right: 5px;
+  }
+  
+  .form_heading {
+    padding-bottom: 20px;
+    font-size: 21px;
+    color: #7878bd;
+  }
+  
+  .field {
+    padding-bottom: 10px;
+  }
+  
+  .minput {
+    border-radius: 5px;
+    background-color: #e9e9f7;
+    padding: 5px;
+    width: 100%;
+    color: #7a7ab3;
+    border: 1px solid #dadaf7
+  }
+  
+  .minput:focus-visible {
+    outline: 1px solid #aeaed6;
+  }
+  
+  .minput::placeholder {
+    color: #bcbcdf;
+  }
+  
+   .mlabel {
+    color: #B2BAC8;
+    font-size: 14px;
+    display: block;
+    padding-bottom: 4px;
+  }
+  
+  
+  
+   /* login button  */
+  
+   .lbutton {
+    background-color: #7878bd;
+    margin-top: 10px;
+    font-size: 14px;
+    padding: 7px 12px;
+    height: auto;
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    border: none;
+  }
+  
+  .lbutton:hover {
+    background-color: #5f5f9c;
+  }
+  
+  
+  /* register button */
+  
+  .register {
+    display: flex;
+    padding: 2px 2px 2px 35px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 2rem;
+    font-weight: 500;
+    margin: 10px 0px;
+    border: 0;
+    outline: 0;
+    font-size: 14px;
+    background: rgb(11, 124, 36);
+    color: #fff;
+  }
+  
+  svg {
+    margin: 20px 0 0 10px;
+  }
+  
+  .register:hover svg {
+    margin: 0 0 0 25px;
+    transition: 0.3s;
+  }
+  
+  .register:not(:hover) svg {
+    transition: 0.3s;
+  }
+  
+  .register:active {
+    transform: scale(0.9, 0.9);
+    transition: 200ms;
+  }
+  
+  .register:not(:active) {
+    transition: 200ms;
+  }
+  
+  
+  /* headings */
+  
+  .mh1 {
+    font-size: 2.6rem;
+    position: relative;
+    bottom: 100px;
+    color: white;
+    top: 75px;
+    padding: 1rem 1rem 1rem 3rem;
+    margin-left: 5rem;
+    letter-spacing: 6px;
+    text-shadow: 3px 3px 10px #000000,-2px 1px 20px #02080c;
+    font-family: 'Fredoka One', cursive;
+    color: yellow;
+    font-weight: bolder;
+  }
+  
+  
+  /* p  tag */
+  .mp {
+    margin: 100px 22px 100px 130px;
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    text-shadow: 2px 2px 5px black;
+    letter-spacing: 1px;
+  }
