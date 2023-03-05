@@ -14,7 +14,7 @@ body {
   /* main containers */
   
   .bigcontainer {
-    background-image: url("/images/pexels-cottonbro-studio-4065133.jpg");
+    background-image: url("/images/Welcome.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -217,9 +217,9 @@ body {
     padding: 1rem 1rem 1rem 3rem;
     margin-left: 5rem;
     letter-spacing: 6px;
-    text-shadow: 3px 3px 10px #000000,-2px 1px 20px #02080c;
+    
     font-family: 'Fredoka One', cursive;
-    color: yellow;
+    color: rgb(255, 37, 13);
     font-weight: bolder;
   }
   
@@ -227,7 +227,7 @@ body {
   /* p  tag */
   .mp {
     margin: 100px 22px 100px 130px;
-    color: white;
+    color: rgb(145, 226, 231);
     font-size: 20px;
     font-family: sans-serif;
     font-weight: bolder;
