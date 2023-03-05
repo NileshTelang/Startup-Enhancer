@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 
+
+=======
+/* Mandar */
+>>>>>>> 8311c0de032be2a54295deb67d62a511052f2376
 body {
     margin: 0;
     padding: 0;
@@ -7,8 +12,11 @@ body {
   /* main containers */
   
   .bigcontainer {
-
+<<<<<<< HEAD
+    background-image: url("/images/Welcome.jpg");
+=======
     background-image: url("/images/watercolor-4116932_1280.png");
+>>>>>>> 8311c0de032be2a54295deb67d62a511052f2376
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -59,7 +67,7 @@ body {
   /* image containers */
   
   .mmainimg {
-    background-image: url("/images/office.png");
+    background-image: url("/images/office\ \(1\).png");
     background-color: #F4F6FB;
     width: 6rem;
     height: 23rem;
@@ -213,9 +221,13 @@ body {
     letter-spacing: 6px;
     
     font-family: 'Fredoka One', cursive;
-
+<<<<<<< HEAD
+    color: rgb(255, 37, 13);
+    font-weight: bolder;
+=======
     color: yellow;
     font-weight: bold;
+>>>>>>> 8311c0de032be2a54295deb67d62a511052f2376
   }
   
   
