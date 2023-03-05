@@ -7,11 +7,11 @@ body {
   /* main containers */
   
   .bigcontainer {
-    background-image: url("/images/pexels-cottonbro-studio-4065133.jpg");
+    background-image: url("/images/watercolor-4116932_1280.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     align-items: center;
     position: fixed;
@@ -19,8 +19,8 @@ body {
     right: 0;
     z-index: 1;
     display: block;
-    width: 1200px;
-    height: 800px;
+    /* width: 1200px;
+    height: 800px; */
     -webkit-filter: blur(5px);
     -moz-filter: blur(5px);
     -o-filter: blur(5px);
@@ -213,7 +213,7 @@ body {
     text-shadow: 3px 3px 10px #000000,-2px 1px 20px #02080c;
     font-family: 'Fredoka One', cursive;
     color: yellow;
-    font-weight: bolder;
+    font-weight: bold;
   }
   
   
@@ -222,8 +222,8 @@ body {
     margin: 100px 22px 100px 130px;
     color: white;
     font-size: 20px;
-    font-family: sans-serif;
-    font-weight: bolder;
+    font-weight: bold;
+    font-family: 'Baloo Bhai 2', cursive;
     text-shadow: 2px 2px 5px black;
     letter-spacing: 1px;
   }
