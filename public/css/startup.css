@@ -1,0 +1,424 @@
+
+.firstcard {
+    margin:30px;
+    margin-left: 40px;
+     width:40vw;
+     height:auto;
+     border-radius: 0.5rem;
+     background-color: #fff;
+     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+     border: 1px solid transparent;
+     border-radius: 25px;
+   }
+   
+   .content {
+     padding: 1.1rem;
+   }
+   
+   .image {
+     display: flex;
+     object-fit: cover;
+     width: 100%;
+     height:auto;
+     background-color: rgb(239, 205, 255);
+   }
+   
+   .founderimage {
+     display: flex;
+     object-fit: cover;
+     width: 100%;
+     height: auto;
+     background-color: rgb(165, 104, 226);
+   }
+   
+   .title {
+     color: #111827;
+     font-size: 1.125rem;
+     line-height: 1.75rem;
+     font-weight: 600;
+   }
+   
+   .desc {
+     margin-top: 0.5rem;
+     color: #6B7280;
+     font-size: 0.875rem;
+     line-height: 1.25rem;
+    
+   }
+   
+   .action {
+     display: inline-flex;
+     margin-top: 1rem;
+     color: #ffffff;
+     font-size: 0.875rem;
+     line-height: 1.25rem;
+     font-weight: 500;
+     align-items: center;
+     gap: 0.25rem;
+     background-color: #2563EB;
+     padding: 4px 8px;
+     border-radius: 4px;
+   }
+   
+   .action span {
+     transition: .3s ease;
+   }
+   
+   .action:hover span {
+     transform: translateX(4px);
+ 
+ 
+   }
+ 
+   .founderCard{
+    
+   }
+   .founderinfo{
+ 
+     margin-left: 35px;
+     
+     
+     align-items: center;
+     
+   }
+   /* circular profile */
+   .mcard .profileimage {
+   
+     width: 10rem;
+     height: 10em;
+     background: #e8e8e8;
+     border-radius: 100%;
+     display:flex;
+     margin: 20px;
+     
+    }
+    
+    /* video card */
+    .videocard {
+      margin-top: 30px;
+      margin-bottom:20px;
+      margin-left: 20px;
+     width: 40vw;
+     height:auto;
+     background: white;
+     padding: .4em;
+     border-radius: 6px;
+     box-shadow: 2px 4px 5px 3px rgba(0, 0, 0, 0.05);
+   }
+   
+   .videocard-image {
+     background-color: rgb(236, 236, 236);
+     width: 100%;
+     height:60vh;
+     border-radius: 6px 6px 0 0;
+     background-size:contain;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-clip: content-box;
+     overflow:hidden;
+  
+     padding: 50px ;
+    
+   }
+   
+   .videocard-image:hover {
+     transform: scale(0.98);
+     background-size: cover;
+   }
+   
+   .videocategory {
+     text-transform: uppercase;
+     font-size: 0.7em;
+     font-weight: 600;
+     color: rgb(63, 121, 230);
+     padding: 10px 7px 0;
+   }
+   
+   .videocategory:hover {
+     cursor: pointer;
+   }
+   
+   .videoheading {
+     font-weight: 600;
+     color: rgb(88, 87, 87);
+     padding: 7px;
+   }
+   
+   .videoheading:hover {
+     cursor: pointer;
+   }
+   
+   .videoauthor {
+     color: gray;
+     font-weight: 400;
+     font-size: 11px;
+     padding-top: 20px;
+   }
+   
+   .videoname {
+     font-weight: 600;
+   }
+   
+   .videoname:hover {
+     cursor: pointer;
+   }
+ 
+ 
+ 
+   .imagesectioninfo{
+     width: 100%;
+     height:auto;
+   }
+ 
+   .startupname{
+     margin:30px 5px 7px 5px;
+     padding:2px;
+   }
+ 
+   .followlink{
+     margin:13px 5px 5px 5px;
+     padding:2px;
+   }
+ 
+ 
+ 
+   /* social */
+   
+   .socialcard svg {
+     height: 20px;
+    
+   }
+   
+   .socialcard {
+     position: relative;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background: #e7e7e7;
+     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+     overflow: hidden;
+     height:3em;
+     width:11em;
+     margin-left: 7px;
+     
+   }
+   
+   .socialcard::before, .socialcard::after {
+     position: absolute;
+     display: flex;
+     align-items: center;
+     width: 50%;
+     height: 100%;
+     transition: 0.25s linear;
+     z-index: 1;
+   }
+   
+   .socialcard::before {
+     content: "";
+     left: 0;
+     justify-content: flex-end;
+     background-color: #4d60b6;
+   }
+   
+   .socialcard::after {
+     content: "";
+     right: 0;
+     justify-content: flex-start;
+     background-color: #4453a6;
+   }
+   
+   .socialcard:hover {
+     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+   }
+   
+   .socialcard:hover span {
+     opacity: 0;
+     z-index: -3;
+   }
+   
+   .socialcard:hover::before {
+     opacity: 0.5;
+     transform: translateY(-100%);
+   }
+   
+   .socialcard:hover::after {
+     opacity: 0.5;
+     transform: translateY(100%);
+   }
+   
+   .socialcard span {
+     position: absolute;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+     height: 100%;
+     color: whitesmoke;
+     font-family: 'Fira Mono', monospace;
+     font-size: 24px;
+     font-weight: 700;
+     opacity: 1;
+     transition: opacity 0.25s;
+     z-index: 2;
+     
+   }
+   
+   .socialcard .social-link {
+     position: relative;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 25%;
+     height: 100%;
+     color: whitesmoke;
+     font-size: 24px;
+     text-decoration: none;
+     transition: 0.25s;
+   }
+   
+   .socialcard .social-link svg {
+     text-shadow: 1px 1px rgba(31, 74, 121, 0.7);
+     transform: scale(1);
+   }
+   
+   .socialcard .social-link:hover {
+     background-color: rgba(249, 244, 255, 0.774);
+     animation: bounce_613 0.4s linear;
+   }
+   
+ 
+   .socialcontainer{
+        position:relative;
+       bottom: 10px;
+ 
+   }
+ 
+   @keyframes bounce_613 {
+     40% {
+       transform: scale(1.4);
+     }
+   
+     60% {
+       transform: scale(0.8);
+     }
+   
+     80% {
+       transform: scale(1.2);
+     }
+   
+     100% {
+       transform: scale(1);
+     }
+   }
+ 
+ 
+   /* download button */
+ 
+   .downloadbutton {
+     position: relative;
+     overflow: hidden;
+     height: 2.5rem;
+     padding: 0 2rem;
+     border-radius: 1.5rem;
+     background: #bf93ec;
+     background-size: 400%;
+     color: #fff;
+     border: solid;
+     width: 50%;
+     font-weight: bold;
+   }
+   
+   .downloadbutton:hover::before {
+     transform: scaleX(1);
+   }
+   
+   .button-content {
+     position: relative;
+     z-index: 1;
+   }
+   
+   .downloadbutton::before {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     transform: scaleX(0);
+     transform-origin: 0 50%;
+     width: 100%;
+     height: inherit;
+     border-radius: inherit;
+     background: linear-gradient(
+       82.3deg,
+       rgba(150, 93, 233, 1) 10.8%,
+       rgba(99, 88, 238, 1) 94.3%
+     );
+     transition: all 0.475s;
+   }
+ 
+   /* registerbutton */
+   .register {
+     display: flex;
+     padding: 2px 2px 2px 2px;
+     align-items: center;
+     justify-content: center;
+     width: 50%;
+     height: 2.5rem;
+     font-weight: 500;
+     margin: 10px 5px;
+     border: 0;
+     outline: 0;
+     font-size: 14px;
+     background: rgb(11, 124, 36);
+     color: #fff;
+     border-radius: 36px;
+     text-align: center;
+     font-weight: bold;
+   }
+   
+ 
+   svg {
+     margin: 20px 0 0 10px;
+   }
+   
+   .register:hover svg {
+     margin: 0 0 0 25px;
+     transition: 0.3s;
+   }
+   
+   .register:not(:hover) svg {
+     transition: 0.3s;
+   }
+   
+   .register:active {
+     transform: scale(0.9, 0.9);
+     transition: 200ms;
+     background-color: rgb(7, 66, 7);
+   }
+   
+   .register:not(:active) {
+     transition: 200ms;
+   }
+ 
+ 
+   .twobutton{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     margin: 2px;
+     padding: 2px;
+   }
+ 
+   .flex{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     vertical-align: middle;
+   }
+ 
+   .connect{
+     width:150px;
+     height:40px;
+     margin-left: 20px;
+   }
