@@ -401,3 +401,431 @@ section{
     margin-top: -60px;
     margin-left: 40px;
 }
+
+
+.pmulti{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 10px;
+    font-style: normal;
+    font-family: Rubik,sans-serif;
+    text-align: center;
+    margin-top: 300px;
+    margin-left: -600px;
+}
+
+.pmulti p{
+
+    font-size: 17px;
+    font-family: Rubik,sans-serif;
+    color: #111111;
+    margin-top: 20px;
+}
+
+.pmultiimg{
+    margin-top: 30px;
+    margin-left: -400px;
+    font-size: small;
+}
+
+.pmulti2{
+    margin-left: 860px;
+    margin-top:-350px;
+}
+
+.pblue{
+    color: #1da1f2;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1;
+    font-style: normal;
+    font-family: Rubik,sans-serif;
+    
+}
+
+.ppurple{
+    color: #c47ee8;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1;
+    font-style: normal;
+    font-family: Rubik,sans-serif;
+}
+
+.pReddishOrange{
+    color: #dd560b;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1;
+    font-style: normal;
+    font-family: Rubik,sans-serif;
+}
+
+.psea{
+    color: #299199;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1;
+    font-style: normal;
+    font-family: Rubik,sans-serif;
+}
+
+.pYellowishOrange{
+    color: #ffa10b;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1;
+    font-style: normal;
+    font-family: Rubik,sans-serif;
+}
+
+.pLapisBlue{
+    color: #0f3b7c;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1;
+    font-style: normal;
+    font-family: Rubik,sans-serif;
+}
+
+.paquaGreen{
+    color: #1defb8;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1;
+    font-style: normal;
+    font-family: Rubik,sans-serif;
+}
+
+.pdiverse{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1;
+    font-style: normal;
+    font-family: Rubik,sans-serif;
+    color: #000;
+    margin-top: 150px;
+    margin-left: 60px;
+}
+
+.pdivimg{
+    font-size: 17px;
+    color: #606060;
+    font-weight: 400;
+    line-height: 1.3;
+    font-family: Rubik,sans-serif;
+    margin-top: 10px;
+    margin-left:60px
+}
+
+.pdivimg2{
+    margin-top: 60px;
+    margin-left: 100px;
+}
+
+.ps1{
+    list-style: none;
+    font-style: normal;
+    font-family: Rubik,sans-serif;
+    font-weight: 400;
+    color: #121212;
+    font-size: 24px;
+    margin-left: 100px;
+
+}
+
+.circlebluecolor{
+
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 100%;
+    border: 2px solid #000;
+    font-style: italic;
+    font-size: 20px;
+    background-color: #0f9cd3;
+    width: 14px;
+    height: 14px;
+
+}
+
+.circleorangeColor{
+
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 100%;
+    border: 2px solid #000;
+    font-style: italic;
+    font-size: 20px;
+    background-color: #ffa10b;
+    width: 14px;
+    height: 14px;
+
+}
+
+.circlegreenColor{
+
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 100%;
+    border: 2px solid #000;
+    font-style: italic;
+    font-size: 20px;
+    background-color: #1defb8;
+    width: 14px;
+    height: 14px;
+
+}
+
+.pslist{
+
+    margin-left: 400px;
+    margin-top: -170px;
+}
+
+.pblank{
+
+    background-color:rgba(180, 155, 107, 0.493);
+    height: 500px;
+    width: 480px;
+    margin-left: 920px;
+    margin-top: -360px;
+}
+
+
+
+.dna{
+    
+    margin-left: 1000px;
+    margin-top: -390px;
+}
+
+
+
+.huge{
+    
+        font-size: 45px;
+        font-weight: 700;
+        line-height: 1;
+        font-style: normal;
+        font-family: Rubik,sans-serif;
+        color: #121213;
+        margin-top: 250px;
+        margin-left: 100px
+}
+
+.huge2{
+    font-size: 17px;
+    color: #606060;
+    font-weight: 400;
+    line-height: 1.3;
+    font-family: Rubik,sans-serif;
+    margin-top: 15px;
+    margin-left:100px
+}
+
+
+  
+  body {
+    margin: 0;
+    font-family: Arial;
+    height: 10px;
+  }
+  
+  
+  .category img__shadow{
+    float: left;
+    width: 25%;
+    padding: 10px;
+  }
+  
+ 
+  .column img {
+    opacity: 1; 
+    cursor: pointer; 
+  }
+  
+  .column img:hover {
+    opacity: 2;
+  }
+  
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  
+  .container {
+    position: relative;
+   
+  }
+  
+ 
+  #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+  }
+  
+ 
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }
+
+ 
+  .column {
+    float: left;
+    width: 400px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+   
+    overflow: hidden;
+   
+  }
+
+  img:hover{
+    transform:scale(1.2);
+}
+
+.s1:hover{
+    transform:scale(1.09);
+}
+
+/*.s1:hover, .s1:active {font-size: 130%;} */
+
+
+
+  
+  /* Clearfix (clear floats) */
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+  .row{
+    margin-left: 70px;
+    margin-top: 80px;
+    
+  }
+
+  .column img{
+    border-radius: 10px;
+    height: 200px;
+    
+    
+  }
+  
+  .column1 {
+    float: left;
+    width: 400px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+   
+  }
+  
+  /* Clearfix (clear floats) */
+  
+  .row1::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+  .row1{
+    margin-left: 70px;
+    margin-top: 60px;
+    
+  }
+
+  .column1 img{
+    border-radius: 10px;
+    height: 200px;
+    
+  }
+
+  .column2 {
+    float: left;
+    width: 400px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+   
+  }
+  
+  /* Clearfix (clear floats) */
+  
+  .row2::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+  .row2{
+    margin-left: 70px;
+    margin-top: 60px;
+    
+  }
+
+  .column2 img{
+    border-radius: 10px;
+    height: 200px;
+    
+  }
+
+  .column3 {
+    float: left;
+    width: 400px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+   
+  }
+  
+  /* Clearfix (clear floats) */
+  
+  .row3::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+  .row3{
+    margin-left: 70px;
+    margin-top: 60px;
+    
+  }
+
+  .column3 img{
+    border-radius: 10px;
+    height: 200px;
+    
+  }
