@@ -1,128 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Registration Page</title>
-  <link rel="stylesheet" href="/public/css/register.css">
-  <script src="https://kit.fontawesome.com/0c13a9f144.js" crossorigin="anonymous"></script>
+  <meta charset="utf-8">
+  <title>Register</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://kit.fontawesome.com/2f3027cded.css" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap-social.css">
+
+  <style >
+  body {
+  background-color: #E8ECEF;
+  }
+  .centered {
+    padding-top: 200px;
+    text-align: center;
+  }
+  .secret-text {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #000;
+  }
+  </style>
 </head>
 <body>
-  <div class="">
-    <div id="" class="">
-      <div class="">
-        <header >
-          <h1>
-            Join NAME
-          </h1>
-          <h2>
-            Find and invest in startups.
-          </h2>
-        </header>
+<div class="container mt-5">
+  <h1>Register</h1>
 
-        <form id="" class="" action="" method="">
-          <input type="hidden">
-          <div class="">
-            <div>
-              <p>
-                Already have an account?
-                <a class="" href="">Log in</a>
-              </p>
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="card">
+        <div class="card-body">
+          <!-- Makes POST request to /register route -->
+          <form action="/register" method="POST">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" name="username">
             </div>
-              <a class="" href="">
-                <i class="fab fa-google"></i>
-                Sign up with Google
-              </a>
-
-              <a class="" href="">
-                <i class="fab fa-linkedin">
-                </i>Sign up with LinkedIn</a>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" name="password">
             </div>
-
-            <div class="">
-              <p>
-                or
-                <a class="" href="">
-                  sign up with email
-                </a>
-              </p>
-            </div>
-          </div>
-
-          <div class="">
-            <div class="">
-              <div class="">
-                <div class="">
-                  <label class="" for="">
-                    First name
-                  </label>
-                  <input data-required="true" data-maxlength="40" placeholder="First name" type="text"
-                    name="user[first_name]" id="">
-                </div>
-              </div>
-
-              <div class="">
-                <div class="">
-                  <label class="" for="">
-                    Last name
-                  </label>
-                  <input data-required="true" data-maxlength="40" data-trigger="focusout"
-                    class="" placeholder="Last name" type="text" value="" id="">
-                </div>
-              </div>
-
-              <div class="">
-                <div class="">
-                  <label class="" for="">
-                    <!-- add id in for property which mentioned in input tag -->
-                    Email
-                  </label>
-                  <input data-type="email" data-required="true"
-                    class="string email optional parsley-validated" placeholder="Your email address" type="email"
-                    name="user[email]" id=""></div>
-              </div>
-
-              <div class="field password">
-                <div class="input password optional user_password">
-                  <label
-                    class="password optional control-label white-label" for="user_password">
-                    Password
-                  </label>
-                  <input
-                    data-minlength="8" data-required="true" class="password optional parsley-validated"
-                    placeholder="Choose a password" type="password" name="user[password]" id="user_password">
-                  </div>
-              </div>
-
-              <div class="">
-                <button id="" class="">
-                  <i class="far fa-envelope" aria-hidden="true"></i> Sign up with email
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div class="">
-            <div>
-              <input value="0" type="hidden">
-              <label>
-                <input type="checkbox" checked="checked">
-                Subscribe me to NAME's weekly newsletter (community updates and awesome startups)
-              </label>
-            </div>
-          </div>
-
-          <div class="">
-            <small>
-              By creating an account, you agree to our <a href="">Terms of Service</a> and
-              <a href="">Privacy Policy</a>.
-            </small>
-          </div>
-        </form>
+            <button type="submit" class="btn btn-dark">Register</button>
+          </form>
+        </div>
       </div>
     </div>
 
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <a class="btn btn-block btn-social btn-google" href="/auth/google" role="button">
+            <i class="fab fa-google"></i>
+            Sign Up with Google
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
+</div>
 </body>
 </html>
