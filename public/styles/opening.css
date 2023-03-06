@@ -3,11 +3,11 @@ body {
     margin: 0;
     padding: 0;
   }
-  
+
   /* main containers */
-  
+
   .bigcontainer {
-    background-image: url("/images/watercolor-4116932_1280.png");
+    background-image: url("/assets/watercolor-4116932_1280.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -28,14 +28,14 @@ body {
     filter: blur(5px);
     filter: drop-shadow(10px);
   }
-  
+
   .mcontainer {
     z-index: 99999;
     position: fixed;
     top: 0px;
     left: 0px;
   }
-  
+
   /* right container */
   .rightcontainer {
     display: flex;
@@ -45,20 +45,20 @@ body {
     top: 60px;
     padding: 2px;
   }
-  
-  
+
+
   /* leftcontainer */
   .leftcontainer {
     justify-content: center;
     position: relative;
   }
-  
-  
-  
+
+
+
   /* image containers */
-  
+
   .mmainimg {
-    background-image: url("/images/office\ \(1\).png");
+    background-image: url("/assets/office\ \(1\).png");
     background-color: #F4F6FB;
     width: 6rem;
     height: 23rem;
@@ -73,9 +73,9 @@ body {
     -webkit-box-shadow: 10px 10px 64px 0px rgba(186, 186, 202, 0.75);
     -moz-box-shadow: 10px 10px 64px 0px rgba(208, 208, 231, 0.75);
   }
-  
+
   /* login and register card */
-  
+
   .mcard {
     padding: 5px;
     width: 18rem;
@@ -87,32 +87,36 @@ body {
     -moz-box-shadow: 10px 10px 64px 0px rgba(208, 208, 231, 0.75);
     border-radius: 0px 25px 25px 0px;
   }
-  
+
   .mform {
     padding: 25px;
   }
-  
+
   .card_header {
     display: flex;
     align-items: center;
   }
-  
+
   .mcard svg {
     color: #7878bd;
     margin-bottom: 20px;
     margin-right: 5px;
   }
-  
+
   .form_heading {
     padding-bottom: 20px;
     font-size: 21px;
     color: #7878bd;
   }
-  
+
+  .nloginbtn {
+    padding-bottom: 10px;
+  }
+
   .field {
     padding-bottom: 10px;
   }
-  
+
   .minput {
     border-radius: 5px;
     background-color: #e9e9f7;
@@ -121,26 +125,26 @@ body {
     color: #7a7ab3;
     border: 1px solid #dadaf7
   }
-  
+
   .minput:focus-visible {
     outline: 1px solid #aeaed6;
   }
-  
+
   .minput::placeholder {
     color: #bcbcdf;
   }
-  
+
    .mlabel {
     color: #B2BAC8;
     font-size: 14px;
     display: block;
     padding-bottom: 4px;
   }
-  
-  
-  
+
+
+
    /* login button  */
-  
+
    .lbutton {
     background-color: #7878bd;
     margin-top: 10px;
@@ -152,14 +156,14 @@ body {
     color: white;
     border: none;
   }
-  
+
   .lbutton:hover {
     background-color: #5f5f9c;
   }
-  
-  
+
+
   /* register button */
-  
+
   .register {
     display: flex;
     padding: 2px 2px 2px 35px;
@@ -175,32 +179,32 @@ body {
     background: rgb(11, 124, 36);
     color: #fff;
   }
-  
+
   svg {
     margin: 20px 0 0 10px;
   }
-  
+
   .register:hover svg {
     margin: 0 0 0 25px;
     transition: 0.3s;
   }
-  
+
   .register:not(:hover) svg {
     transition: 0.3s;
   }
-  
+
   .register:active {
     transform: scale(0.9, 0.9);
     transition: 200ms;
   }
-  
+
   .register:not(:active) {
     transition: 200ms;
   }
-  
-  
+
+
   /* headings */
-  
+
   .mh1 {
     font-size: 2.6rem;
     position: relative;
@@ -210,13 +214,13 @@ body {
     padding: 1rem 1rem 1rem 3rem;
     margin-left: 5rem;
     letter-spacing: 6px;
-    
+
     font-family: 'Fredoka One', cursive;
     color: yellow;
     font-weight: bold;
   }
-  
-  
+
+
   /* p  tag */
   .mp {
     margin: 100px 22px 100px 130px;
