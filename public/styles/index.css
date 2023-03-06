@@ -35,7 +35,7 @@ header{
     position: sticky;
     top: 0px;
     background-color: white;
-   
+
     width: 100%;
     z-index: 1000;
     font-size: large;
@@ -55,7 +55,7 @@ section{
     height: 100%;
     top: 0;
     left: 0;
-    
+
 }
 
 .container{
@@ -83,7 +83,7 @@ section{
     margin-top: 20px;
     margin-left: -190;
     text-align: center;
-   
+
 }
 
 .nav-links{
@@ -107,7 +107,7 @@ section{
     line-height: 3rem;
     margin-top: 30px;
     margin-left: 40px;
-    
+
 }
 
 .logo span{
@@ -254,7 +254,7 @@ section{
         background-color: #FFFFFF;
     }
 
-   
+
     .nav-link:hover > .dropdown,
     .dropdown-link:hover > .dropdown{
         display: block;
@@ -277,8 +277,8 @@ section{
         border-bottom: none;
     }
 
-   
-   
+
+
     .nav-link > a > i{
         font-size: 1.1rem;
         transform: rotate(-90deg);
@@ -290,17 +290,17 @@ section{
         transition: .7s;
     }
 
-   
+
     .pnav{
 
         margin-left:100px;
         margin-top: 10px;
     }
 
-   
-      
-     
-    
+
+
+
+
 }
 
 
@@ -310,12 +310,12 @@ section{
     border-radius:5px;
     border: none;
 }
-     
+
 .search{
     float:right;
     margin-top:-50px;
 }
-     
+
 .search button{
     background-color: #0074D9;
     color: #f2f2f2;
@@ -328,9 +328,9 @@ section{
 }
 
  .pslider{
-    
+
     background-color:rgba(238, 236, 234, 0.705);
-    
+
     border : 10px solid rgb(63, 61, 61);
     height: 450px;
     width:400px;
@@ -339,7 +339,7 @@ section{
     text-align: center;
     line-height: 50px;
     font-family: arial rounded mt bold;
-} 
+}
 
 .pimg1{
     margin-top: -920px;

@@ -206,7 +206,7 @@ body {
   /* headings */
 
   .mh1 {
-    font-size: 2.6rem;
+    font-size: 2.9rem;
     position: relative;
     bottom: 100px;
     color: white;
@@ -214,20 +214,20 @@ body {
     padding: 1rem 1rem 1rem 3rem;
     margin-left: 5rem;
     letter-spacing: 6px;
+    text-shadow: 3px 3px 10px #000000,-2px 1px 20px #02080c;
+    font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: rgb(97, 250, 255);
 
-    font-family: 'Fredoka One', cursive;
-    color: yellow;
-    font-weight: bold;
+
   }
 
 
   /* p  tag */
   .mp {
     margin: 100px 22px 100px 130px;
-    color: rgb(145, 226, 231);
-    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
     font-weight: bold;
     font-family: 'Baloo Bhai 2', cursive;
-    text-shadow: 2px 2px 5px black;
     letter-spacing: 1px;
   }

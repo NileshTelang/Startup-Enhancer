@@ -41,7 +41,7 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-mongoose.connect("mongodb://127.0.0.1:27017/userDB"); //localhost ain't working => 127.0.0.1
+mongoose.connect("mongodb://127.0.0.1:27017/fTeamDB"); //localhost ain't working => 127.0.0.1
 
 const userSchema = new mongoose.Schema ({
   email : String,
@@ -103,7 +103,7 @@ app.get("/register", function(req, res){
 });
 
 app.get("/startup", function(req, res){
-  User.find({"sTitle": {$ne: null}}, function(err, foundUsers){
+  User.find({"secret": {$ne: null}}, function(err, foundUsers){
     if (err){
       console.log(err);
     } else {
@@ -122,17 +122,6 @@ app.get("/home", async (req, res) => {
     console.log(err);
   }
 });
-// app.get("/home", function (req, res)  {
-//   User.find({"username": {$ne: null}}, function(err, foundUsers){
-//     if (err){
-//       console.log(err);
-//     } else {
-//       if (foundUsers) {
-//         res.render("home", {usersWithSecrets: foundUsers});
-//       }
-//     }
-//   });
-// });
 
 
 app.get("/logout", function(req, res){
@@ -194,8 +183,8 @@ app.get("/hr",function(req,res){
   res.render("hr");
 });
 
-app.get("/buiseness",function(req,res){
-  res.render("buiseness");
+app.get("/buisness",function(req,res){
+  res.render("buisness");
 });
 
 
