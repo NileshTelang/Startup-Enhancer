@@ -721,11 +721,7 @@ section{
   }
 
 
-  .row{
-    margin-left: 70px;
-    margin-top: 80px;
-    
-  }
+ 
 
   .column img{
     border-radius: 10px;
@@ -754,11 +750,6 @@ section{
   }
 
 
-  .row1{
-    margin-left: 70px;
-    margin-top: 60px;
-    
-  }
 
   .column1 img{
     border-radius: 10px;
@@ -786,11 +777,6 @@ section{
   }
 
 
-  .row2{
-    margin-left: 70px;
-    margin-top: 60px;
-    
-  }
 
   .column2 img{
     border-radius: 10px;
@@ -818,14 +804,25 @@ section{
   }
 
 
-  .row3{
-    margin-left: 70px;
-    margin-top: 60px;
-    
-  }
+ 
 
   .column3 img{
     border-radius: 10px;
     height: 200px;
     
+  }
+
+  .startupContainer {
+    margin: 10% 10% 10% 10%;
+    
+  }
+
+  .desc {
+    padding:20px;
+    color: black;
+  }
+
+  .hrgo {
+    height: 20px;
+    visibility: hidden;
   }
