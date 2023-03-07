@@ -84,7 +84,7 @@ passport.use(new GoogleStrategy({
 ));
 
 app.get("/", function(req, res){
-  res.render("opening");
+  res.render("startup");
 });
 
 app.get("/auth/google",
