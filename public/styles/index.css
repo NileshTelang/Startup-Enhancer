@@ -826,3 +826,166 @@ section{
     height: 20px;
     visibility: hidden;
   }
+
+
+  
+.fsticky{
+    position: sticky;
+    top: 100%;
+}
+  
+
+ footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #9FC088;
+    height: auto;
+    width: 100vw;
+    font-family: "Open Sans";
+    padding-top: 0px;
+    color: #080808;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-weight: 400;
+    margin-top : 50px;
+    margin-left: 0px;
+    font-size: 1.8rem;
+    justify-content: center;
+    color: #ffffff;
+}
+
+
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #222121;
+}
+.socials a i{
+    font-size: 2rem;
+    letter-spacing: 120px;
+    transition: color .4s ease;
+
+}
+
+.socials a:hover i{
+    color: #ffffff;
+}
+
+.footer-bottom{
+    background: #3a3737;
+    width: 100vw;
+  
+    text-align: center;
+}
+
+
+
+.psec{
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 1;
+    font-style: normal;
+    font-family: Rubik,sans-serif;
+    color: #121213;
+    
+  
+}
+
+.sp1{
+    color: #1da1f2;
+}
+.sp3{
+    color: #c47ee8;
+}
+
+.sp4{
+    color: #dd560b;
+}
+.sp5{
+    color: #1defb8;
+}
+.sp6{
+    color: #ffa10b;
+}
+
+.pend{
+    
+        font-size: 17px;
+        color: #606060;
+        font-weight: 400;
+        line-height: 1.3;
+        font-family:cursive;
+        margin-top: 60px;
+        margin-left:480px
+    
+}
+
+.copyright{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    color: #FFFFFF;
+}
+
+
+
+  .button {
+    display: inline-block;
+   
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #302f2f;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 3px #999;
+  }
+
+
+  .button:hover {background-color: white;
+                  color:#000;
+}
+  
+  .socials1{
+    margin-top: -50px;
+  }
+
+  .socials{
+    margin-top: 70px;
+  }
+
+  .pbtn{
+    margin-top:15px;
+    margin-left: 5%;
+   
+  }
+  .button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  .footer-content{
+
+    margin-left: -730px;
+  }
