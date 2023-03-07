@@ -813,7 +813,7 @@ section{
   }
 
   .startupContainer {
-    margin: 10% 10% 10% 10%;
+    margin: 10% 10% -150px 10%;
     
   }
 
@@ -846,18 +846,19 @@ section{
     font-family: "Open Sans";
     padding-top: 0px;
     color: #080808;
+    justify-content: center;
+
 }
 .footer-content{
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
     text-align: center;
 }
 .footer-content h3{
     font-weight: 400;
     margin-top : 50px;
-    margin-left: 0px;
+    margin-left: 32%;
     font-size: 1.8rem;
     justify-content: center;
     color: #ffffff;
@@ -869,8 +870,7 @@ section{
     list-style: none;
     display: flex;
     align-items: center;
-    
-    margin: 1rem 0 3rem 0;
+    margin: 10% 50% ;
 }
 .socials li{
     margin: 0 10px;
