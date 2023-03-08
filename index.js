@@ -97,17 +97,18 @@ var startupSchema = new mongoose.Schema({
 
 var sups = mongoose.model('startups', startupSchema);
 
-app.get("/",function(req,res){
+app.get("/", function (req, res) {
   res.render("opening");
 });
 
 app.get("/home", async (req, res) => {
   const docs = await sups.find({});
-  res.render("home",{startups : docs });
+  res.render("home", { startups: docs });
 
 });
 
-app.get("/contributors",function(req,res){
+
+app.get("/contributors", function (req, res) {
   res.render("contributors");
 });
 
@@ -118,16 +119,16 @@ app.get("/auth/google",
 
 app.get("/auth/google/home",
   passport.authenticate('google', { failureRedirect: "/opening" }),
-  function (req, res) {
-    // Successful authentication, redirect to secrets.
-    res.render("home");
+  async (req, res) => {
+    const docs = await sups.find({});
+    res.render("home", { startups: docs });
   });
 
-  app.get("/startup", async (req, res) => {
-    const docs = await sups.find({});
-    res.render("startup",{startups : docs });
-  
-  });
+app.get("/startup", async (req, res) => {
+  const docs = await sups.find({});
+  res.render("startup", { startups: docs });
+
+});
 
 
 
@@ -183,7 +184,7 @@ app.get("/submit", function (req, res) {
   res.render("submit");
 })
 
-app.post("/submit", async (req, res)=> {
+app.post("/submit", async (req, res) => {
 
 
   const email = req.body.email;
@@ -209,7 +210,7 @@ app.post("/submit", async (req, res)=> {
     } else {
       console.log("Record Inserted Successfully!!")
       const docs = await sups.find({});
-      res.render("home",{startups : docs });
+      res.render("home", { startups: docs });
     }
 
   });
