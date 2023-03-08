@@ -38,7 +38,7 @@ height:auto;
 filter: invert(1);
 }
 .mid {                    
-background: url(/images/elephant.jpg);
+background: url(/assets/elephant.jpg);
 background-repeat: no-repeat;                    
 border: 1px solid #eee;
 display: flex;
@@ -248,7 +248,7 @@ color: rgb(252, 249, 249);
 
 .background{         
           
-background: url(/images/pexels-august-de-richelieu-4427430.jpg);
+background: url(/assets/pexels-august-de-richelieu-4427430.jpg);
         width: 100%;  
         height: auto;         
 border: 1px solid #eee;
