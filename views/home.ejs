@@ -20,7 +20,7 @@
         <div class="plogo">
 
         </div>
-        <h3 class="logo" onclick="notifyMe()" >Dream<span>Job</span></h3>
+        <h3 class="logo"  >Dream<span>Job</span></h3>
       </div>
 
 
@@ -36,11 +36,12 @@
               <div class="dropdown">
                 <ul>
                   <li class="dropdown-link">
-                    <a href="/finance">Financial Asistance</a>
+                    <a href="/submit"><b>+ STARTUP</a></b>
                   </li>
                   <li class="dropdown-link">
-                    <a href="/buisness">Buisness Planning</a>
+                    <a href="/finance">Financial Asistance</a>
                   </li>
+                  
                   <li class="dropdown-link">
                     <a href="/hrcon">HR Consultancy</a>
 
@@ -382,8 +383,8 @@
         <h3> Follow Us </h3><br><br>
         <div class="socials1">
           <ul class="socials">
-            <li><a href="#"><i class="fa fa-facebook"></i></span></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i> </a></li>
+            <li><a href="https://www.linkedin.com/in/harshal-madgulkar/"><i class="fa fa-facebook"></i></span></a></li>
+            <li><a href="https://twitter.com/UmareMandar"><i class="fa fa-twitter"></i> </a></li>
             <li><a href="https://github.com/novafirekt"><i class="fa fa-github"> </i> </a></li>
             <li><a href="https://www.linkedin.com/in/pratiksha-pathare-34025b22a"><i class="fa fa-linkedin-square"></i>
               </a></li>
@@ -394,40 +395,7 @@
 
   </footer>
 
-  <script>
-
-
-    function notifyMe() {
-      if (!("Notification" in window)) {
-        // Check if the browser supports notifications
-        alert("This browser does not support desktop notification");
-      } else if (Notification.permission === "granted") {
-        // Check whether notification permissions have already been granted;
-        // if so, create a notification
-        const notification = new Notification("New Message From Startup Community",{body :"Hola Amigo",
-          icon : "https://icon-library.com/images/hi-icon/hi-icon-27.jpg"});
-        // …
-      } else if (Notification.permission !== "denied") {
-        // We need to ask the user for permission
-        Notification.requestPermission().then((permission) => {
-          // If the user accepts, let's create a notification
-          if (permission === "granted") {
-            const notification = new Notification("New Message From Startup Community",{body :"Hola Amigo",
-              icon : "https://cdn-icons-png.flaticon.com/512/2645/2645883.png"});
-            //
-          }
-        });
-      }
-    
-      notification.onclick = (e) => {
-        window.location.href = "https://www.google.com";
-      };
-    
-      // At last, if the user has denied notifications, and you
-      // want to be respectful there is no need to bother them anymore.
-    }
-    
-    </script>
+  
 
 </body>
 
