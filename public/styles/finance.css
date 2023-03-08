@@ -1,5 +1,25 @@
 /* Header */
+.lola{
+  position: absolute;
+  margin: 7% 10%;
+  color: white;
+  display: flex;
+}
 
+a:link,
+a:visited {
+  color: rgba(25, 9, 9, 0.64);
+}
+
+h3 {
+  color: white;
+
+  margin: 20px;
+}
+
+.monkey:hover{
+  transform: scale(1.09);
+}
 
 header{
     position: sticky;
@@ -968,3 +988,4 @@ footer{
 .papa {
   width : 540px;
 }
+
