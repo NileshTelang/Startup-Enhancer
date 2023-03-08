@@ -53,7 +53,7 @@
               <a style="font-family: Rubik,sans-serif;" href="/contributors">ABOUT US&nbsp;</a>
 
             <li class="nav-link" style="--i: 1.35s">
-              <a href="#">CONTACT US&nbsp;</a>
+              <a href="https://forms.gle/o7tjABStUQatSEM98">CONTACT US&nbsp;</a>
             </li>
             <li class="nav-link" style="--i: 1.35s">
               <a href="/logout">LOG OUT &nbsp;</a>
@@ -328,12 +328,32 @@
               <img src="https://www.thenewleam.com/wp-content/uploads/2019/10/India-child-labour-school-holiday-1.jpg"
                 alt="Snow" style="width:100%">
               <hr class="hrgo">
-              <span class="desc"></span> Education StartUp For Underprivileged</span>
+              <span class="desc">Education StartUp For Underprivileged</span>
             </div>
           </div>
         </a>
 
       </div>
+
+      <div class="row">
+        <% if(startups !=null) { %>
+          <% Array.from(startups).forEach(function(startup){ %>
+            <a href="#" class="a1">
+              <div class="column ">
+                <div class="row">
+
+                  <img src="<%=startup.img%>" alt="Startup Image" style="width:100%">
+                  <hr class="hrgo">
+                  <span class="desc">
+                    <%=startup.title%>
+                  </span>
+                </div>
+              </div>
+            </a>
+            <% }) %>
+          <% } %>
+      </div>
+
 
 
       <section>
@@ -365,7 +385,8 @@
             <li><a href="#"><i class="fa fa-facebook"></i></span></a></li>
             <li><a href="#"><i class="fa fa-twitter"></i> </a></li>
             <li><a href="https://github.com/novafirekt"><i class="fa fa-github"> </i> </a></li>
-            <li><a href="https://www.linkedin.com/in/pratiksha-pathare-34025b22a"><i class="fa fa-linkedin-square"></i> </a></li>
+            <li><a href="https://www.linkedin.com/in/pratiksha-pathare-34025b22a"><i class="fa fa-linkedin-square"></i>
+              </a></li>
             <li><a href="/contributors"><i class="fa fa-users"></i> </a></li>
           </ul>
         </div>
