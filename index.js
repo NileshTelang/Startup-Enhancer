@@ -97,14 +97,17 @@ var startupSchema = new mongoose.Schema({
 
 var sups = mongoose.model('startups', startupSchema);
 
+app.get("/",function(req,res){
+  res.render("opening");
+});
 
-// app.get("/", async (req, res) => {
-//   const docs = await sups.find({});
-//   res.render("home",{startups : docs });
+app.get("/home", async (req, res) => {
+  const docs = await sups.find({});
+  res.render("home",{startups : docs });
 
-// });
+});
 
-app.get("/", function(req,res){
+app.get("/contributors",function(req,res){
   res.render("contributors");
 });
 
@@ -136,14 +139,7 @@ app.get("/startup", function (req, res) {
   });
 });
 
-app.get("/home", async (req, res) => {
-  try {
-    const founduser = await User.find({});
-    res.render("home", { startups: null });
-  } catch (err) {
-    console.log(err);
-  }
-});
+
 
 
 app.get("/logout", function (req, res) {
