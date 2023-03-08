@@ -226,10 +226,11 @@ app.get("/contact", function (req, res) {
   res.render("contact");
 });
 
+
 // hr-finance-buiseness
 
-app.get("/hr", function (req, res) {
-  res.render("hr");
+app.get("/hrcon", function (req, res) {
+  res.render("hrcon");
 });
 
 app.get("/buisness", function (req, res) {
