@@ -217,6 +217,10 @@ app.post("/submit", async (req, res)=> {
 });
 
 
+app.get("/register", function (req, res) {
+  res.render("register");
+});
+
 //contactContent
 app.get("/contact", function (req, res) {
   res.render("contact");
