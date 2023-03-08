@@ -123,21 +123,12 @@ app.get("/auth/google/home",
     res.render("home");
   });
 
-app.get("/register", function (req, res) {
-  res.render("register");
-});
-
-app.get("/startup", function (req, res) {
-  User.find({ "secret": { $ne: null } }, function (err, foundUsers) {
-    if (err) {
-      console.log(err);
-    } else {
-      if (foundUsers) {
-        res.render("startup", { usersWithSecrets: foundUsers });
-      }
-    }
+  app.get("/startup", async (req, res) => {
+    const docs = await sups.find({});
+    res.render("startup",{startups : docs });
+  
   });
-});
+
 
 
 
