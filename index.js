@@ -98,11 +98,16 @@ var startupSchema = new mongoose.Schema({
 var sups = mongoose.model('startups', startupSchema);
 
 
-app.get("/", async (req, res) => {
-  const docs = await sups.find({});
-  res.render("home",{startups : docs });
+// app.get("/", async (req, res) => {
+//   const docs = await sups.find({});
+//   res.render("home",{startups : docs });
 
+// });
+
+app.get("/", function(req,res){
+  res.render("contributors");
 });
+
 
 app.get("/auth/google",
   passport.authenticate('google', { scope: ["profile"] })
