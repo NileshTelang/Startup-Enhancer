@@ -70,9 +70,6 @@
  
    }
  
-   .founderCard{
-    
-   }
    .founderinfo{
  
      margin-left: 35px;
@@ -98,6 +95,7 @@
       margin-top: 30px;
       margin-bottom:20px;
       margin-left: 20px;
+    
      width: 40vw;
      height:auto;
      background: white;
@@ -399,6 +397,10 @@
    .register:not(:active) {
      transition: 200ms;
    }
+   .m2h1{
+    color: white;
+    font-weight: bold;
+   }
  
  
    .twobutton{
@@ -422,3 +424,52 @@
      height:40px;
      margin-left: 20px;
    }
+
+   .productspecification{
+    display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: #c0b2ef;
+  margin-top: 20px;
+    
+   }
+
+   .productcard{
+    margin:50px 10px;
+    height:auto;
+    padding: 50px;
+    text-align: justify;
+    justify-content: center;
+    text-align: center;
+    /* background-color: rgb(207, 170, 253); */
+
+   }
+
+   .otherdetails{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:50px 10px;
+   background-color: #ebe7e6;
+   }
+
+   
+
+   .founderdetail div h4{
+    color:white;
+    margin-top: 0;
+
+   }
+   .founderdetail div h5{
+    font-weight: bold;
+   }
+   .founderdetail div h6{
+    color:rgb(205, 200, 200);
+   }
+
+   .odheading h1{
+    font-weight: bold;
+   }
+
+   
