@@ -32,6 +32,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 
+function isLoggedIn(req,res,next){
+  req.user ? next() : res.sendStatus(401);
+}
+
 
 app.use(session({
   secret: "Our little secret.",
@@ -55,16 +59,16 @@ const userSchema = new mongoose.Schema({
 userSchema.plugin(passportLocalMongoose);
 userSchema.plugin(findOrCreate);
 
-const User = new mongoose.model("User", userSchema);
+const User = new mongoose.model("users", userSchema);
 
 passport.use(User.createStrategy());
 
-passport.serializeUser(function (user, done) {
-  done(null, user.id);
+passport.serializeUser(function(user, done) {
+  done(null, user);
 });
 
-passport.deserializeUser((id, done) => {
-  User.findById(id).then((user) => done(null, user))
+passport.deserializeUser(function(user, done) {
+  done(null, user);
 });
 
 
@@ -75,12 +79,21 @@ passport.use(new GoogleStrategy({
   callbackURL: "http://localhost:4131/auth/google/home",
   userProfileURL: "https://www.googleapis.com/oauth2/v3/userinfo"
 },
-  function (accessToken, refreshToken, profile, cb) {
+  async (request , accessToken, refreshToken, profile, done)=> {
     console.log(profile);
-
-    User.findOrCreate({ googleId: profile.id }, function (err, user) {
-      return cb(err, user);
-    });
+    done(null,profile);
+    const user = await User.findOne({googleId: profile.id});
+    if(user){
+      console.log("Google Id LoggedIn");
+    }else{
+      const newuser = await User.create({googleId : profile.id});
+      user.save();
+      if(newuser){
+        console.log("Profile Created");
+      }else{
+        console.log("err bro work hard");
+      }
+    }
   }
 ));
 
@@ -101,14 +114,14 @@ app.get("/", function (req, res) {
   res.render("opening");
 });
 
-app.get("/home", async (req, res) => {
+app.get("/home", isLoggedIn,async (req, res) => {
   const docs = await sups.find({});
   res.render("home", { startups: docs });
 
 });
 
 
-app.get("/contributors", function (req, res) {
+app.get("/contributors",isLoggedIn, function (req, res) {
   res.render("contributors");
 });
 
@@ -118,13 +131,13 @@ app.get("/auth/google",
 );
 
 app.get("/auth/google/home",
-  passport.authenticate('google', { failureRedirect: "/opening" }),
+  passport.authenticate('google', { failureRedirect: "opening" }),
   async (req, res) => {
     const docs = await sups.find({});
     res.render("home", { startups: docs });
   });
 
-app.get("/startup", async (req, res) => {
+app.get("/startup",isLoggedIn, async (req, res) => {
   const docs = await sups.find({});
   res.render("startup", { startups: docs });
 
@@ -139,6 +152,7 @@ app.get("/logout", function (req, res) {
     if (err) {
       console.log(err);
     } else {
+      req.session.destroy();
       console.log("Session LOgged Out")
     }
   });
@@ -180,7 +194,7 @@ app.post("/opening", function (req, res) {
 
 });
 
-app.get("/submit", function (req, res) {
+app.get("/submit",isLoggedIn, function (req, res) {
   res.render("submit");
 })
 
@@ -230,16 +244,16 @@ app.get("/contact", function (req, res) {
 
 // hr-finance-buiseness
 
-app.get("/hrcon", function (req, res) {
+app.get("/hrcon",isLoggedIn, function (req, res) {
   res.render("hrcon");
 });
 
-app.get("/buisness", function (req, res) {
+app.get("/buisness",isLoggedIn, function (req, res) {
   res.render("buisness");
 });
 
 
-app.get("/finance", function (req, res) {
+app.get("/finance",isLoggedIn, function (req, res) {
   res.render("finance");
 });
 
