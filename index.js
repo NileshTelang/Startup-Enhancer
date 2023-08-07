@@ -23,7 +23,7 @@ app.use(express.static("public"));
 app.set('view engine', 'ejs');
 
 //views
-app.set('views', path.join(__dirname, './Views'));
+app.set('views', path.join(__dirname, './views'));
 
 //bodyParser use
 app.use(bodyParser.urlencoded({ extended: true }));
