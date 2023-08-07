@@ -15,7 +15,7 @@
     "express": "",
     "express-session": "",
     "lodash": "",
-    "mongoose": "",
+    "mongoose": "14.20.1",
     "mongoose-findorcreate": "",
     "multer": "",
     "passport": "",
