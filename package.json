@@ -21,6 +21,7 @@
     "passport": "",
     "passport-google-oauth20": "",
     "passport-local-mongoose": "",
-    "path": ""
+    "path": "",
+    "nodemon":""
   }
 }
