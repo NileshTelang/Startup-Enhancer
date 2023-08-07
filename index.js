@@ -76,7 +76,7 @@ passport.deserializeUser(function(user, done) {
 passport.use(new GoogleStrategy({
   clientID: process.env.GOOGLE_CLIENT_ID,
   clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-  callbackURL: "http://localhost:4131/auth/google/home",
+  callbackURL: "https://startup-enhancer.onrender.com/auth/google/home",
   userProfileURL: "https://www.googleapis.com/oauth2/v3/userinfo"
 },
   async (request , accessToken, refreshToken, profile, done)=> {
