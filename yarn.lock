@@ -644,7 +644,7 @@ mongoose-findorcreate@^4.0.0:
   resolved "https://registry.yarnpkg.com/mongoose-findorcreate/-/mongoose-findorcreate-4.0.0.tgz#3172ca1100197620f362eb2fbb90f1cb27924da7"
   integrity sha512-wi0vrTmazWBeZn8wHVdb8NEa+ZrAbnmfI8QltnFeIgvC33VlnooapvPSk21W22IEhs0vZ0cBz0MmXcc7eTTSZQ==
 
-mongoose@^7.4.2:
+mongoose@7.4.2:
   version "7.4.2"
   resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-7.4.2.tgz#fcf23f59f410b187a5611a119ee22d0970235be7"
   integrity sha512-sNolW2hyncwvWmZjIEIwAckjaSKtC1SE86zE1v2TKm3vPTRogZfBQf+3zLYYdrgrVTzoaoICieVpct9hjcn3EQ==
