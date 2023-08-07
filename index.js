@@ -46,7 +46,7 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-mongoose.connect("mongodb://127.0.0.1:27017/fTeamDB"); //localhost ain't working => 127.0.0.1
+mongoose.connect(process.env.MONGODB_URI); //localhost ain't working => 127.0.0.1
 const db = mongoose.connection;
 const userSchema = new mongoose.Schema({
   email: String,
