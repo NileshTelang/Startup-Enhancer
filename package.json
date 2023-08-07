@@ -4,8 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "babel src -d lib",
-    "test": "node index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "lint": "eslint --fix src",
+    "test": "jest"
   },
   "dependencies": {
     "body-parser": "^1.20.2",
