@@ -233,4 +233,55 @@ body {
   }
 
 
-  
+/* Mandar */
+
+/* ... (previous code) ... */
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  /* Adjustments for smaller screens */
+
+  .bigcontainer {
+    background-size: auto;
+  }
+
+  .rightcontainer {
+    top: 30px;
+    padding: 0;
+  }
+
+  .leftcontainer {
+    justify-content: flex-start;
+    padding-left: 20px;
+  }
+
+  .mmainimg {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: none;
+  }
+
+  .mcard {
+    width: 100%;
+    border-radius: 25px;
+  }
+
+  .mform {
+    padding: 15px;
+  }
+
+  .mh1 {
+    font-size: 2rem;
+    padding: 1rem;
+    margin-left: 0;
+    bottom: 0;
+  }
+
+  .mp {
+    margin: 20px;
+    font-size: 18px;
+  }
+}
