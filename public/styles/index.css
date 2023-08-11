@@ -1097,3 +1097,189 @@ section{
 .member:hover{
     transform:scale(1.03);
 }
+
+
+/* Pratiksha */
+
+/* Your existing CSS code */
+
+/* Add responsive styles */
+@media (max-width: 768px) {
+    body {
+        background: none;
+    }
+
+    header {
+        position: sticky;
+        top: 0;
+        background-color: white;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    .logo {
+        margin-left: 10px;
+    }
+
+    .nav-btn {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .nav-links {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .nav-link > a {
+        padding: 10px 0;
+    }
+
+    .dropdown {
+        position: static;
+        transform: none;
+        opacity: 1;
+        pointer-events: auto;
+        width: 100%;
+    }
+
+    .dropdown-link {
+        width: 100%;
+        text-align: center;
+    }
+
+    .search {
+        margin-top: 10px;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .search input[type=text] {
+        width: 80%;
+    }
+
+    .pslider {
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+
+    .pimg1, .pimg2, .pimg3 {
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .pimg4, .pimg5 {
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+
+    .pis, .pis2, .pis3 {
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+
+    .pmulti {
+        margin-top: 30px;
+        margin-left: 0;
+    }
+
+    .pmultiimg {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .pmulti2 {
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .huge {
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+
+    .huge2 {
+        margin-left: 20px;
+    }
+
+    .startupContainer {
+        margin: 5% 5% -150px 5%;
+    }
+
+    .footer-content {
+        margin-left: -10px;
+        text-align: center;
+    }
+
+    .psec {
+        font-size: 22px;
+    }
+
+    .pend {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    /* Additional responsive adjustments for mobile devices */
+    .row,
+    .row1,
+    .row2,
+    .row3 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .column,
+    .column1,
+    .column2,
+    .column3 {
+        width: 90%;
+        margin: 10px auto;
+        padding: 20px;
+    }
+
+    .column img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+
+    .papa {
+        width: 100%;
+    }
+
+    .team1 {
+        margin-left: 0;
+    }
+
+    .team .member,
+    .team3 .member {
+        width: 80%;
+        margin: 20px auto;
+        height: auto;
+    }
+
+    .team .member img,
+    .team3 .member img {
+        width: 50%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .mt {
+        margin-left: 20px;
+    }
+
+    .team .meet,
+    .team3 .meet {
+        font-size: 36px;
+    }
+}
+
+/* Your existing CSS code */

@@ -1,11 +1,10 @@
-
 body {
   background-color: #E8ECEF;
 }
 
 .centered {
-    padding-top: 200px;
-    text-align: center;
+  padding-top: 200px;
+  text-align: center;
 }
 
 .secret-text {
@@ -13,4 +12,17 @@ body {
   font-size: 2rem;
   color: #fff;
   background-color: #000;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  /* Adjust styles for screens with a maximum width of 768px (commonly used for mobile devices) */
+
+  .centered {
+    padding-top: 100px; /* Reduce padding for smaller screens */
+  }
+
+  .secret-text {
+    font-size: 1.5rem; /* Decrease font size for smaller screens */
+  }
 }

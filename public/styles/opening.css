@@ -233,4 +233,59 @@ body {
   }
 
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+  /* Adjust styles for screens with a maximum width of 768px (commonly used for mobile devices) */
+
+  .bigcontainer {
+      background-size: auto;
+      position: relative; /* Allow content to flow normally on mobile devices */
+      height: auto; /* Let the height adjust to content */
+  }
+
+  .rightcontainer {
+      display: block; /* Display content in a single column on mobile */
+      top: 0; /* Adjust top position for better spacing */
+      padding: 20px; /* Add some padding for spacing */
+  }
+
+  .leftcontainer {
+      padding: 20px; /* Add padding for spacing */
+  }
+
+  .mmainimg {
+      width: 100%;
+      height: auto;
+      padding: 20px;
+      border-radius: 0; /* Remove border radius for mobile */
+      box-shadow: none;
+  }
+
+  .mcard {
+      width: 100%;
+      border-radius: 0; /* Remove border radius for mobile */
+  }
+
+  .mform {
+      padding: 15px;
+  }
+
+  .mh1 {
+      font-size: 2rem;
+      bottom: auto;
+      top: 0;
+      padding: 1rem;
+      margin-left: 0;
+      text-align: center; /* Center the text on mobile */
+  }
+
+  .mp {
+      margin: 20px;
+      font-size: 18px;
+      text-align: center; /* Center the text on mobile */
+  }
+}
+
+
+
   
