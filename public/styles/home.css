@@ -43,7 +43,7 @@ header {
 
 section {
   position: relative;
-  height: calc(100vh - 3rem);
+  height:100%;
   width: 100%;
   background: url('bg.jpg') no-repeat top center / cover;
   overflow: visible;
@@ -241,7 +241,6 @@ section {
 
   .nav-link {
     width: 100%;
-    opacity: 0;
     transform: translateY(15px);
   }
 
@@ -328,31 +327,112 @@ section {
   cursor: pointer;
 }
 
+
+.specs {
+  align-items: center;
+  margin: 5% 10%;
+}
+
+/* pslider */
+
+
+
+.pslider-title {
+  font-family: Rubik, sans-serif;
+  font-size: 40px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.pslider-subtitle {
+  color: #641cd1;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+
+.pslider-description {
+  font-family: Rubik, sans-serif;
+  color: #606060;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-top: 5px;
+}
+
+
 .pslider {
 
   background-color: rgba(238, 236, 234, 0.705);
-
+  position: relative;
   border: 10px solid rgb(63, 61, 61);
-  height: 450px;
-  width: 400px;
-  margin-left: px;
-  margin-top: 550px;
+  height: 50%;
+  width: 70%;
+  margin-left: 10%;
+  margin-top: 5%;
   text-align: center;
   line-height: 50px;
   font-family: arial rounded mt bold;
 }
 
+.pimg1 img {
+  height: 350px;
+}
+
+.pimg2-text {
+  font-size: 16px;
+  font-style: normal;
+  font-family: Rubik, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: larger;
+}
+
+.pimg3-title {
+  color: #1da1f2;
+  font-family: Rubik, sans-serif;
+  font-size: 16px;
+}
+
+.pimg4-text {
+  font-size: 16px;
+}
+
+.pis,
+.pis2 {
+  font-style: italic;
+  font-family: Rubik, sans-serif;
+}
+
+.pis {
+  color: #1da1f2;
+}
+
+.pis2 {
+  color: black;
+}
+
+.pimg5-text {
+  font-size: 16px;
+}
+
+.pis3 {
+  font-style: italic;
+  font-family: Rubik, sans-serif;
+  color: #1da1f2;
+}
+
 .pimg1 {
-  margin-top: -920px;
-  margin-left: 890px;
+  margin-top: 10%;
+  margin-left: 50%;
   height: 100px;
   width: 150px;
 }
 
 .pimg2 {
+  text-align: center;
 
-  margin-top: 250px;
-  margin-left: 890px;
+  margin-top: 18%;
+  margin-left: 25%;
 }
 
 .pimg3 {
@@ -592,16 +672,16 @@ section {
   background-color: rgba(180, 155, 107, 0.493);
   height: 500px;
   width: 480px;
-  margin-left: 920px;
-  margin-top: -360px;
+  margin-left: 50%;
+  margin-top: -30%;
 }
 
 
 
 .dna {
 
-  margin-left: 1000px;
-  margin-top: -390px;
+  margin-left: 57%;
+  margin-top: -25%;
 }
 
 
@@ -813,7 +893,7 @@ img:hover {
 }
 
 .startupContainer {
-  margin: 10% 10% -150px 10%;
+  margin: 10% 10% 10% 10%;
 
 }
 
@@ -827,16 +907,12 @@ img:hover {
   visibility: hidden;
 }
 
-/* Footer Section */
-.fsticky {
-  position: relative;
-  /* Change to relative for mobile */
-} 
+
 
 footer {
   background-color: #9FC088;
   font-family: "Open Sans";
-  padding: 20px 0;
+  padding: 2% 0%;
   color: #080808;
   text-align: center;
 }
@@ -847,7 +923,7 @@ footer {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  margin: 5% !important;
+  margin: 2% !important;
 }
 
 .footer-content h3 {
@@ -857,20 +933,15 @@ footer {
   color: #ffffff;
 }
 
-.socials1 {
-  margin-top: 20px;
-}
-
 .socials {
-  list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px 0;
+  margin:  20%;
 }
 
 .socials li {
-  margin: 0 10px;
+  margin: 70%;
 }
 
 .socials a {
@@ -879,7 +950,7 @@ footer {
 }
 
 .socials a i {
-  font-size: 1.5rem;
+  font-size: 2rem;
   transition: color 0.4s ease;
 }
 
@@ -895,13 +966,12 @@ footer {
   font-style: normal;
   font-family: Rubik, sans-serif;
   color: #121213;
-  margin : 20%;
 
 }
 
 .psec-h2{
   margin : 20% ;
-  padding-bottom:20% !important ;
+  text-align: center;
 }
 
 .sp1 {
@@ -1107,6 +1177,9 @@ footer {
   /* Header */
   header {
     font-size: medium;
+    overflow: visible;
+    margin: 10%;
+    content-visibility:visible;
   }
 
   .logo {
@@ -1115,6 +1188,10 @@ footer {
     margin-left: 10px;
   }
 
+  .specs {
+    align-items: center !important;
+    margin: 5% 10%;
+  }
   /* Navigation */
   .nav-btn {
     flex-direction: column;
@@ -1122,10 +1199,7 @@ footer {
     margin-left: 0;
   }
 
-  .nav-links {
-    display: none;
-    /* Hide main navigation links */
-  }
+
 
   .hamburger-menu-container {
     display: flex;
@@ -1172,8 +1246,20 @@ footer {
 /* Adjust font sizes and margins for smaller screens */
 @media (max-width: 768px) {
   body {
-    font-size: 14px;
     padding: 7% !important; 
+  }
+
+  .logo-container {
+    display: none;
+  }
+  .footer {
+    padding: 0% !important;
+    margin: 0%;
+  }
+
+  .socials a i {
+    font-size: 0.5rem;
+    transition: color 0.4s ease;
   }
 
   .pslider {
@@ -1189,6 +1275,10 @@ footer {
     display: none;
   }
 
+  .pmulti {
+    font-size: 1.6rem;
+  }
+
   .a1{
     padding-top: 30% !important;
     justify-content: left !important;
@@ -1199,10 +1289,6 @@ footer {
     font-size: 24px;
   }
 
-  .nav-links {
-    display: none;
-  }
-
   .hamburger-menu-container {
     display: block;
   }
@@ -1211,10 +1297,7 @@ footer {
     display: none;
   }
 
-  .pslider h1,
-  .pslider h3 {
-    font-size: 24px;
-  }
+  
 
   .pimg1 img {
     height: 200px;
@@ -1245,10 +1328,6 @@ footer {
   .pslider{
     margin: 10%;  
     margin-left: 0% !important;
-  }
-
-  header{
-    display: none;
   }
 }
 
@@ -1293,6 +1372,10 @@ footer {
     display: none;
   }
 
+  .footer-content {
+    font-size: smaller;
+  }
+
   .container {
     padding: 20px;
   }
@@ -1317,7 +1400,7 @@ footer {
   .huge,
   .huge2,
   .startupContainer {
-    margin: 20px 0;
+    margin: 10% ;
   }
 
 
