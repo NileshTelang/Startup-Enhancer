@@ -240,6 +240,7 @@ body {
       background-size: auto;
       position: relative; /* Allow content to flow normally on mobile devices */
       height: auto; /* Let the height adjust to content */
+      overflow: scroll;
   }
 
   .rightcontainer { /* Display content in a single column on mobile */
@@ -251,13 +252,17 @@ body {
 
   .leftcontainer {
       padding: 5%; /* Add padding for spacing */
+      overflow: hidden;
   }
 
   .mmainimg {
-    max-width: 50%;
+    flex-basis: 20%;
+    max-width: 20%;
     height: 100%;
     border-radius: 0;
     box-shadow: none;
+    padding: 5%;
+    overflow: scroll;
   }
 
   .mcard {
@@ -267,6 +272,7 @@ body {
   .mform {
       padding: 5%;
       overflow:scroll;
+      flex-basis: 80%;
       
   }
 
