@@ -58,7 +58,7 @@ body {
   /* image containers */
 
   .mmainimg {
-    background-image: url("/assets/office\ \(1\).png");
+    background-image: url("/assets/office.png");
     background-color: #F4F6FB;
     width: 6rem;
     height: 23rem;
@@ -254,11 +254,12 @@ body {
   }
 
   .mmainimg {
-      width: 100%;
-      height: auto;
-      padding: 20px;
-      border-radius: 0; /* Remove border radius for mobile */
-      box-shadow: none;
+    width: 80%;
+    height: auto;
+    padding: 20%;
+    margin: auto;
+    border-radius: 0;
+    box-shadow: none;
   }
 
   .mcard {
