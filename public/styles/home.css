@@ -46,7 +46,7 @@ section {
   height: calc(100vh - 3rem);
   width: 100%;
   background: url('bg.jpg') no-repeat top center / cover;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .overlay {
@@ -831,7 +831,7 @@ img:hover {
 .fsticky {
   position: relative;
   /* Change to relative for mobile */
-}
+} 
 
 footer {
   background-color: #9FC088;
@@ -1235,9 +1235,7 @@ footer {
     margin: 5% !important;
   }
 
-  section{
-    max-height: fit-content !important;
-  }
+  
 
   body{
     padding: 0;
