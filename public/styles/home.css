@@ -915,6 +915,7 @@ footer {
   padding: 2% 0%;
   color: #080808;
   text-align: center;
+  width: 100vw;
 }
 
 .footer-content {
@@ -1053,10 +1054,7 @@ footer {
   transform: translateY(4px);
 }
 
-.footer-content {
 
-  margin-left: -730px;
-}
 
 .papa {
   width: 540px;
