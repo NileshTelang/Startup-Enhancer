@@ -236,6 +236,16 @@ body {
 @media (max-width: 768px) {
   /* Adjust styles for screens with a maximum width of 768px (commonly used for mobile devices) */
 
+  .mcontainer.row {
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 5%;
+  }
+
+  .mcontainer{
+    display: inline;
+  }
+
   .bigcontainer {
       background-size: auto;
       position: relative; /* Allow content to flow normally on mobile devices */
@@ -246,8 +256,9 @@ body {
   .rightcontainer { /* Display content in a single column on mobile */
       top: 0;  /* Add some padding for spacing */
       width: 100%;
-      padding: 5%;
       overflow: scroll;
+      bottom: 10%;
+      padding: 0px !important;
   }
 
   .leftcontainer {
