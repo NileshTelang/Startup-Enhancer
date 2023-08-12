@@ -1,33 +1,32 @@
 /* Mandar */
 body {
-    margin: 0;
+    margin: 10%;
     padding: 0;
+    overflow: scroll;
   }
 
   /* main containers */
 
-  .bigcontainer {
-    background-image: url("/assets/watercolor-4116932_1280.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
-    align-items: center;
-    position: fixed;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    display: block;
-    /* width: 1200px;
-    height: 800px; */
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -o-filter: blur(5px);
-    -ms-filter: blur(5px);
-    filter: blur(5px);
-    filter: drop-shadow(10px);
-  }
+  /* main containers */
+
+.bigcontainer {
+  background-image: url("/assets/watercolor-4116932_1280.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  z-index: 1;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  filter: drop-shadow(10px);
+  overflow: auto; /* Enable scrolling for content that overflows */
+}
+
 
   .mcontainer {
     z-index: 99999;
@@ -243,32 +242,32 @@ body {
       height: auto; /* Let the height adjust to content */
   }
 
-  .rightcontainer {
-      display: block; /* Display content in a single column on mobile */
-      top: 0; /* Adjust top position for better spacing */
-      padding: 20px; /* Add some padding for spacing */
+  .rightcontainer { /* Display content in a single column on mobile */
+      top: 0;  /* Add some padding for spacing */
+      width: 100%;
+      padding: 5%;
+      overflow: scroll;
   }
 
   .leftcontainer {
-      padding: 20px; /* Add padding for spacing */
+      padding: 5%; /* Add padding for spacing */
   }
 
   .mmainimg {
-    width: 80%;
-    height: auto;
-    padding: 20%;
-    margin: auto;
+    max-width: 50%;
+    height: 100%;
     border-radius: 0;
     box-shadow: none;
   }
 
   .mcard {
-      width: 100%;
-      border-radius: 0; /* Remove border radius for mobile */
+      border-radius: 0; 
   }
 
   .mform {
-      padding: 15px;
+      padding: 5%;
+      overflow:scroll;
+      
   }
 
   .mh1 {
